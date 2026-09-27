@@ -1,10 +1,12 @@
-const urlBase = 'http://COP4331-5.com/LAMPAPI';
+//Declares and assigns variables
+const urlBase = 'Place_holder_URL';
 const extension = 'php';
 
 let userId = 0;
 let firstName = "";
 let lastName = "";
 
+//Performs login
 function doLogin()
 {
 	userId = 0;
@@ -57,7 +59,7 @@ function doLogin()
 	}
 
 }
-
+//Creates and saves a cookie 
 function saveCookie()
 {
     let minutes = 20;
@@ -65,7 +67,7 @@ function saveCookie()
 	date.setTime(date.getTime()+(minutes*60*1000));	
 	document.cookie = "firstName=" + firstName + ",lastName=" + lastName + ",userId=" + userId + ";expires=" + date.toGMTString();
 }
-
+//Reads previously created cookie
 function readCookie()
 {
     	userId = -1;
@@ -98,7 +100,7 @@ function readCookie()
 //		document.getElementById("userName").innerHTML = "Logged in as " + firstName + " " + lastName;
 	}
 }
-
+//Performs logout
 function doLogout()
 {
     userId = 0;
@@ -107,7 +109,7 @@ function doLogout()
 	document.cookie = "firstName= ; expires = Thu, 01 Jan 1970 00:00:00 GMT";
 	window.location.href = "index.html";
 }
-
+//Adds a new color to the database
 function addColor()
 {
     	let newColor = document.getElementById("colorText").value;
@@ -138,10 +140,10 @@ function addColor()
 	}
 
 }
-//Search color function
+//Searches for a color in the database
 function searchColor()
 {
-    	let srch = document.getElementById("searchText").value;
+    let srch = document.getElementById("searchText").value;
 	document.getElementById("colorSearchResult").innerHTML = "";
 	
 	let colorList = "";
