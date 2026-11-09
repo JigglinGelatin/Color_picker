@@ -185,3 +185,9 @@ function searchColor()
 	}
 	
 }
+
+doLogin();
+readCookie();
+doLogout();
+addColor();
+searchColor();
