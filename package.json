@@ -1,0 +1,30 @@
+{
+  "name": "color_picker",
+  "version": "1.0.0",
+  "description": "This is a color picking webapp designed for COP4331. It consists of a login page allowing users to  login with a username and password and a color picking page with allows users to store and select  a color by name.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+         "lint:js": "eslint .",
+   	 "lint:html": "htmlhint \"**/*.html\"",
+   	 "lint:css": "stylelint \"**/*.css\"",
+   	 "lint": "npm run lint:js && npm run lint:html && npm run lint:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JigglinGelatin/Color_picker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JigglinGelatin/Color_picker/issues"
+  },
+  "homepage": "https://github.com/JigglinGelatin/Color_picker#readme",
+  "devDependencies": {
+    "eslint": "^10.14.0",
+    "htmlhint": "^1.9.2",
+    "stylelint": "^18.0.0",
+    "stylelint-config-standard": "^41.0.0"
+  }
+}
